@@ -1,0 +1,28 @@
+const theme = {
+  white: '#fff',
+  black: '#000',
+  grayLight: '#F6F7FB',
+  grayMid: '#3E3E3E',
+  grayDark: '#878787',
+  grayDarkest: '#222',
+  red: '#EF1D09',
+  orangeLight: '#F68E56',
+  orangeMid: '#FF3E10',
+  brownLight: '#B59677',
+  pinkLight: '#FBEAE3',
+  pink: '#FF497D',
+  blueLight: '#D7DBE7',
+  blueMid: '#3577F1',
+  cyan: '#01BAD4',
+  twitter: '#1da1f2',
+  youtube: '#ff0000',
+  instagram: '#c32aa3',
+  pinterest: '#bd081c',
+  dribbble: '#ea4c89',
+  facebook: '#1877f2',
+  radiusDefault: '4px',
+  radius50: '50%', 
+  cardShadow: 'rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px',
+}
+
+export default theme;
