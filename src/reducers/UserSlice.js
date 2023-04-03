@@ -2,8 +2,8 @@ import { createSlice } from '@reduxjs/toolkit'
 
 let initialState = {
   username: 'user',
-  email: 'user1@gmail.com',
-  password: 'user1@',
+  email: 'user@gmail.com',
+  password: 'user',
   isLoggedIn: false,
 };
 

@@ -5,6 +5,7 @@ import { useSearchParams } from 'react-router-dom';
 
 const CategoryFilter = ({categoriesCount}) => {
   const dispatch = useDispatch();
+  // eslint-disable-next-line no-unused-vars
   const [searchParams, setSearchParams] = useSearchParams();
 
   const handleCategoryFilter = (category) => {

@@ -2,7 +2,7 @@ import React, {lazy, Suspense} from 'react'
 import { ThemeProvider } from 'styled-components'
 import theme from './styled/themeProvider'
 import GlobalStyle from './styled/GlobalStyle'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Route, Routes, HashRouter } from 'react-router-dom'
 import UserAuth from './components/login/UserAuth'
 import CommonLayout from './components/common-layout/CommonLayout'
 import Loader from './components/loader/Loader'
@@ -15,7 +15,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <BrowserRouter>
+      <HashRouter>
         <Suspense fallback={<Loader>loading...</Loader>}>
           <Routes>
             <Route path='/' element={<UserAuth><CommonLayout><LazyHome /></CommonLayout></UserAuth>} />
@@ -24,7 +24,7 @@ const App = () => {
             <Route path='/login' element={<LazyLogin />} />
           </Routes>
         </Suspense>
-      </BrowserRouter>
+      </HashRouter>
     </ThemeProvider>
   )
 }

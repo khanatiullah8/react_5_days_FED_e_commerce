@@ -34,6 +34,7 @@ const Modal = () => {
       document.removeEventListener('keyup', handleModalByEscape);
       modalContent.classList.remove('active');
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (

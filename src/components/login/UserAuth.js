@@ -10,6 +10,7 @@ const UserAuth = ({children}) => {
     if(!userDetails.isLoggedIn) {
       return navigate('/login');
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
 

@@ -7,6 +7,7 @@ import { useSearchParams } from 'react-router-dom';
 const SearchFilter = () => {
   const dispatch = useDispatch();
   const searchText = useSelector((state) => state.filterProduct.search);
+  // eslint-disable-next-line no-unused-vars
   const [searchParams, setSearchParams] = useSearchParams();
 
   const handleInputSearch = (e) => {

@@ -8,10 +8,12 @@ const PriceFilter = ({maxPrice}) => {
   const dispatch = useDispatch();
   const [rangeValueMin, setRangeValueMin] = useState(0);
   const [rangeValueMax, setRangeValueMax] = useState(maxPrice);
+  // eslint-disable-next-line no-unused-vars
   const [searchParams, setSearchParams] = useSearchParams();
 
   useEffect(() => {
     dispatch(filterPriceSet({min: 0, max: maxPrice}))
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleFormFilter = (e) => {
